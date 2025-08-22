@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>BANED UNBANED WHATSAPP VIP V2: by RamzzNotDev HATI anti tumbang</title>
+  <style>
+    body {
+      background-image: url('https://l.top4top.io/p_3497pp4h21.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center center;
+      color: lime;
+      font-family: monospace;
+      text-align: center;
+      padding: 30px;
+    }
+    .btn {
+      background-color: #111c;
+      color: #0f0;
+      border: 1px solid #0f0;
+      padding: 20px;
+      margin: 15px auto;
+      width: 320px;
+      font-size: 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      display: block;
+      text-decoration: none;
+    }
+    input {
+      padding: 15px;
+      width: 85%;
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+    .hidden {
+      display: none;
+    }
+    .footer {
+      margin-top: 60px;
+      font-size: 20px;
+      color: #0f0;
+      text-shadow: 1px 1px 4px black;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="font-size: 36px;">BANED UNBANED WHATSAPP VIP V2</h1>
+  <h3 style="font-size: 24px;">by RamzzNotDev HATI anti tumbang</h3>
+
+  <div id="mainMenu">
+    <button class="btn" onclick="showSection('banedMenu')">BANED WHATSAPP</button>
+    <button class="btn" onclick="showSection('unbanedMenu')">UNBANED WHATSAPP</button>
+  </div>
+
+  <div id="banedMenu" class="hidden">
+    <button class="btn" onclick="showForm('v1')">BANED WHATSAPP V1</button>
+    <button class="btn" onclick="showForm('v2')">BANED WHATSAPP V2</button>
+    <button class="btn" onclick="showForm('v3')">BANED WHATSAPP V3</button>
+    <button class="btn" onclick="goBackToMainMenu()">⬅️ Kembali</button>
+  </div>
+
+  <div id="unbanedMenu" class="hidden">
+    <button class="btn" onclick="showForm('u1')">UNBANED WHATSAPP V1</button>
+    <button class="btn" onclick="showForm('u2')">UNBANED WHATSAPP V2</button>
+    <button class="btn" onclick="showForm('u3')">UNBANED WHATSAPP V3</button>
+    <button class="btn" onclick="goBackToMainMenu()">⬅️ Kembali</button>
+  </div>
+
+  <div id="formSection" class="hidden">
+    <input type="text" id="nomor" placeholder="Masukkan Nomor WhatsApp">
+    <button class="btn" onclick="sendMail()">Kirim Laporan</button>
+    <button class="btn" onclick="goBackToPreviousMenu()">⬅️ Kembali</button>
+    <a id="sendEmail" style="display:none;"></a>
+  </div>
+
+  <div class="footer">
+    <p>DI PUJI TIDAK TERBANG DI HINA — KU BANED WHATSAPP MU BANG — SALAM DARI: KANG BAN MODE VIP ADMIN HEKER EPEP/UCAP KANG BAN KWKWKW</p>
+  </div>
+
+  <script>
+    let selectedVersion = '';
+    let previousMenu = '';
+
+    function showSection(id) {
+      document.getElementById('mainMenu').classList.add('hidden');
+      document.getElementById(id).classList.remove('hidden');
+      previousMenu = id;
+    }
+
+    function goBackToMainMenu() {
+      document.getElementById('banedMenu').classList.add('hidden');
+      document.getElementById('unbanedMenu').classList.add('hidden');
+      document.getElementById('mainMenu').classList.remove('hidden');
+    }
+
+    function showForm(ver) {
+      selectedVersion = ver;
+      document.getElementById('banedMenu').classList.add('hidden');
+      document.getElementById('unbanedMenu').classList.add('hidden');
+      document.getElementById('formSection').classList.remove('hidden');
+    }
+
+    function goBackToPreviousMenu() {
+      document.getElementById('formSection').classList.add('hidden');
+      document.getElementById(previousMenu).classList.remove('hidden');
+    }
+
+    function sendMail() {
+      const no = document.getElementById('nomor').value.trim();
+      if (!no) return alert('Masukkan nomor terlebih dahulu!');
+
+      let body = '';
+      if (selectedVersion === 'v1') {
+        body = `To WhatsApp Support Team,%0D%0A%0D%0AI would like to report the following phone number for engaging in spam or suspicious activities:%0D%0AType of violation: [Spam / Fraud / Threat / Phishing]%0D%0AI have received several disturbing messages from this number, and I am concerned that it may also harm other WhatsApp users.%0D%0APlease review and take appropriate action against this number as soon as possible.%0D%0AI am willing to provide screenshot evidence if required.%0D%0AThank you for your attention and support.%0D%0Amy number: ${no}`;
+      }
+      if (selectedVersion === 'v2') {
+        body = `إلى فريق دعم واتساب (ميتا)،%0D%0A%0D%0Aأود من خلال هذه الرسالة تقديم بلاغ رسمي وطلب حظر أو إيقاف دائم للرقم التالي، وذلك بسبب ارتكابه انتهاكات خطيرة لشروط استخدام خدمة واتساب.%0D%0A%0D%0Aنوع الانتهاكات التي قام بها هذا الرقم تشمل:%0D%0A- إرسال رسائل مزعجة (سبام) ورسائل جماعية غير مرغوب بها%0D%0A- نشر روابط ضارة أو تحتوي على تصيّد احتيالي (Phishing)%0D%0A- تنفيذ عمليات احتيال أو انتحال صفة جهات رسمية%0D%0A- التهديد أو الإساءة اللفظية%0D%0A- نشر معلومات كاذبة أو أخبار مضللة%0D%0A%0D%0Aإن تصرفات هذا المستخدم قد سببت لي ضرراً مباشراً، وقد تُشكّل تهديداً لمستخدمي واتساب الآخرين أيضاً.%0D%0A%0D%0Aلذا أطلب من فريق واتساب ما يلي:%0D%0A1. التحقيق فوراً في أنشطة هذا الرقم%0D%0A2. إيقاف أو حظر الحساب بشكل دائم إن ثبتت المخالفات%0D%0A3. منع هذا الشخص من استخدام خدمات واتساب مستقبلاً لأغراض ضارة%0D%0A%0D%0Aأنا على استعداد لتقديم أدلة داعمة إضافية، مثل:%0D%0A- لقطات شاشة من المحادثات%0D%0A- تسجيلات فيديو أو شاشة تُوثّق الانتهاكات%0D%0A- أي معلومات إضافية تُساعد في التحقيق%0D%0A%0D%0Aآمل أن تتم معالجة هذا البلاغ بأسرع وقت ممكن للحفاظ على أمان وراحة جميع مستخدمي واتساب.%0D%0A📌 رقم واتساب المُبلَّغ عنه: ${no}`;
+      }
+      if (selectedVersion === 'v3') {
+        body = `I would like to request the permanent deactivation of my WhatsApp number, as I no longer use it and wish to protect the security and privacy of my account.%0D%0A%0D%0APlease assist in processing this deactivation request. Thank you for your support.%0D%0A%0D%0AMy WhatsApp number is: ${no}`;
+      }
+      if (selectedVersion === 'u1') {
+        body = `Dear WhatsApp Support Team,%0D%0A%0D%0AMy number ${no} was mistakenly banned. I kindly request a review and restoration of access to my account.%0D%0A%0D%0AThank you for your assistance.`;
+      }
+      if (selectedVersion === 'u2') {
+        body = `Halo Tim Dukungan WhatsApp,%0D%0A%0D%0ASaya ingin mengajukan permohonan pembukaan kembali akun saya dengan nomor: ${no}.%0D%0ASaya yakin terjadi kesalahan dan saya tidak melanggar ketentuan penggunaan.%0D%0AMohon bantuannya untuk meninjau kembali kasus ini.%0D%0ATerima kasih atas bantuannya.`;
+      }
+      if (selectedVersion === 'u3') {
+        body = `فريق دعم واتساب المحترم،%0D%0A%0D%0Aتم حظر رقمي التالي عن طريق الخطأ: ${no}.%0D%0Aأرجو مراجعة الحظر وإعادة تفعيل حسابي بأسرع وقت ممكن.%0D%0A%0D%0Aشكراً لكم على دعمكم.`;
+      }
+
+      const subject = encodeURIComponent("WHATSAPP ACCOUNT REPORT");
+      const mailto = `mailto:678886347952793@support.whatsapp.com,support@support.whatsapp.com,support@in.whatsapp.com,smb@support.whatsapp.com?subject=${subject}&body=${body}`;
+      document.getElementById('sendEmail').href = mailto;
+      document.getElementById('sendEmail').click();
+    }
+  </script>
+</body>
+</html>
